@@ -4,12 +4,14 @@ ROCK, PAPER, OR SCISSORS PROJECT
 Write your functions below.
 */
 
-// testing git add, commit, and push
+// Updating based on your request 
 function getUserChoice (userInput) {
-    const tpyeIn = userInput.toLowerCase()
+    // As requested, I modified the parameter with the method toLowerCase()
+    userInput = userInput.toLowerCase()
 
-    if (tpyeIn === 'rock' || tpyeIn === 'scissors' || tpyeIn === 'paper') {
-        return tpyeIn
+    if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper') {
+        return userInput
     }
-    else console.log("Error");
+    // I added ! to the existing text, Error, as requested
+    else console.log("Error!");
 }
