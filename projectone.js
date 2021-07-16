@@ -29,3 +29,44 @@ function getComputerChoice () {
         return 'scissors';
     }
 }
+
+function determineWinner (userChoice, computerChoice) {
+    if (userChoice === 'bomb') {
+      return 'You won'
+    }
+    if (userChoice === 'rock') {
+      if (computerChoice === 'paper') {
+        return 'The computer won!';
+      } else {
+        return 'You won!'
+      }
+    }if (userChoice === 'paper') {
+      if (computerChoice === 'scissors') {
+        return 'The Computer won!';
+      } else {
+        return 'You won!'
+      }
+    }
+    if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'The computer won!';
+    } else {
+      return 'You won!';
+    }
+  }
+  }
+  
+  function playGame () {
+    const userChoice 
+    = getUserChoice('paper');
+  
+    const computerChoice 
+    = getComputerChoice()
+    console.log('You threw:' + userChoice);
+    console.log('The computer threw:'+ computerChoice);
+    console.log(determineWinner(userChoice, computerChoice));
+   };
+  
+  playGame()
+
+//   Added a secret cheat code too.
